@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./events.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <title>Events</title>
+</head>
+<body>
+    <header>
+        <img src="../images/LifeAid Healthcare Logo Design.png" alt="LifeAid Logo" width="60px">
+        <nav id="navlink" class="navlink">
+            <a href="../index.html">Home</a>
+            <a href="../about/index.html">About Us</a>
+            <a href="./index.html">Events</a>
+            <a href="../helpdesk/index.html">Help Desk</a>
+            <a href="../donate/index.html" id="Sign">Donate</a>
+       
+        </nav>
+
+        <div id="toggle" class="toggle">
+            <img id="hamburger" class="hamburger" src="../images/hamburger.png" alt="hamburger" width="20px">
+        </div>
+    </header>
+
+    <main>
+       <div class="event">
+        <h1 id="event">Events</h1>
+       </div> 
+   
+    <section class="first">
+       <div class="left">
+        <img src="../images/breast cancer walk.jpg" alt="breast cancer walk image" id="breast" class="mobile">
+       </div> 
+
+        <div class="right">
+            <h1>Breast Cancer Awareness Walk 2025</h1>
+            <h2>Date: October 12, 2025</h2>
+            <h3>Location: Lagos, Nigeria</h3>
+            <p>Join hundreds of supporters as we walk in pink to promote early detection and empower women with knowledge and hope.</p>
+            <button class="reg">Register</button> 
+        </div>
+    </section>
+
+    <section class="second">
+        <div class="left1">
+            <img src="../images/therapy.jpg" alt="therapy image" class="two" class="mobile">
+        </div>
+        <div class="right1">
+            <h1>Healing Together — Cancer Therapy & Support Session</h1>
+            <h2>Date: November 3, 2025</h2>
+            <h3>Location: Virtual (Zoom)</h3>
+            <p>An open group therapy and emotional wellness session for patients, survivors, and families. Hosted by professional therapists and guest speakers.</p>
+            <button class="reg">Register</button> 
+        </div>
+    </section>
+
+    <section class="third">
+     <div class="left">
+        <img src="../images/NIGHT.jpg" alt="night image" id="night" class="mobile">
+     </div>   
+    <div class="right">
+    <h1>Stories of Hope Night</h1>
+    <h2>Date: December 10, 2025</h2>
+    <h3>Location: Abuja, Nigeria</h3>
+    <p>Celebrate the inspiring journeys of survivors and caregivers who turned pain into power. Experience music, poetry, and shared stories of resilience.</p>
+      <button class="reg">Register</button> 
+    </div>
+    </section>
+
+    <section class="fourth">
+       <div class="left1">
+        <img src="../images/dinner.jpg" alt="dinner image" class="two" class="mobile">
+       </div> 
+    <div class="right1">
+        <h1>LifeAid Fundraising Dinner</h1>
+        <h2>Date: January 25, 2026</h2>
+        <h3>Location: Eko Hotel, Lagos</h3>
+        <p>A night of compassion and giving. Enjoy dinner, live music, and special guest speakers as we raise funds to support cancer patients in need.</p>
+          <button class="reg">Register</button> 
+        </div>
+
+    </section>
+
+    <section class="fifth">
+        <div class="left"> 
+            <img src="../images/charity walk.jpg" alt="walk image" id="walk" class="mobile">
+        </div>
+
+        <div class="right">
+            <h1>LifeAid Charity Walk for Life</h1>
+             <h2>Date: March 14, 2026</h2>
+            <h3>Location: Ibadan, Nigeria</h3>
+            <p>Walk with purpose and help raise awareness for terminal illness support. Every step counts toward saving a life.</p>
+            <button class="reg">Register</button>
+        </div>
+  
+</section>
+    </main>
+
+     <footer>
+        <div>
+        <div>
+        <img src="../images/LifeAid Healthcare Logo Design.png" alt="LifeAid Logo" width="100px">
+        </div>
+
+         <div style="margin-top: 20px;">
+            <img src="../images/facebook.png" alt="facebook icon" width="25px">
+            <img src="../images/twitter.png" alt="twitter icon" width="22px">
+            <img src="../images/instagram.png" alt="instagram icon" width="20px">
+            <img src="../images/youtube.png" alt="youtube icon" width="20px">
+        </div>
+        </div>
+
+        <div class="links" >
+            <a href="./index.html">Home</a>
+            <a href="../about/index.html">About Us</a>
+            <a href="./index.html">Events</a>
+            <a href="../helpdesk/index.html">Help Desk</a>
+            <a href="../donate/index.html">Donate</a>
+        </div>
+
+        <div class="contact">
+            <ul>
+                <li>Contacts</li>
+                <li>Tel: 09067561279</li>
+                <li>Email: info@lifeaid.org</li>
+                <li>Website: www.lifeaid.org </li>
+            </ul>
+        </div>
+
+    
+
+        <div class="subscribe">
+            <div>
+            <p id="news">Subscribe to our newsletter</p>
+        <form action="">
+            <input type="email" id="email" placeholder="Email">
+            <input type="submit">
+        </form>
+            </div>
+                <p>@Copyright 2025 </p>
+            <div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navlink = document.getElementById("navlink");
+        const toggle = document.getElementById("toggle");
+
+        const closeMenu = () => {
+            navlink.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+        };
+
+        toggle.addEventListener("click", () => {
+           const isOpen = navlink.classList.toggle("show");
+           toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        navlink.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", closeMenu);
+        });
+    </script>
+</body>
+</html>

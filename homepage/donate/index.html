@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./donate.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <title>Donate</title>
+</head>
+<body>
+    <header>
+        <img src="../images/LifeAid Healthcare Logo Design.png" alt="LifeAid Logo" width="60px">
+        <nav id="navlink" class="navlink">
+            <a href="../index.html">Home</a>
+            <a href="../about/index.html">About Us</a>
+            <a href="../events/index.html">Events</a>
+            <a href="../helpdesk/index.html">Help Desk</a>
+           <a href="./index.html" id="Sign">Donate</a>
+          
+        </nav>
+
+        <div id="toggle" class="toggle">
+            <img id="hamburger" class="hamburger" src="../images/hamburger.png" alt="hamburger" width="20px">
+        </div>
+    </header>    
+    <main>
+        
+   
+     <section class="second">
+        <div id="donate">
+        <h1>Donate to Save a Life</h1>
+        <p>Your kindness can bring healing, hope, and happiness. <br>
+        Every day, thousands of people face life-threatening illnesses — fighting for the chance to live, love, and dream again. <br>
+        At LifeAid, we connect compassionate donors like you with patients who need urgent medical help, therapy, and emotional support.</p>
+        
+            </div>
+
+        <div id="your">
+        <h3>Your donation helps pay for:</h3>
+            <ul>
+        <li> Life-saving treatments and surgeries</li>
+        <li> Essential medications and therapies</li>
+        <li> Mental health and counseling support</li>
+        <li> Awareness campaigns and community events</li>
+        <li>Support for families of patients in need</li>
+                </ul>
+        <p>No gift is too small, every contribution brings someone closer to hope and healing.</p>
+
+       
+        </div>
+    </section>
+
+    <section class="first">
+    <div class="ways">
+    <h1> Ways to Give</h1>
+    
+    <ol>
+        <li> <b>One-Time Donation : </b>
+        Make a single impact today and help a patient begin their healing journey.</li>
+        <li><b>Monthly Support:</b>
+        Join our community of LifeAid Angels, consistent givers who provide ongoing support for patients and awareness programs.</li> 
+        <li> <b>Fund a Specific Cause:</b>
+        Choose where your help goes e.g. breast cancer treatment, therapy support, or charity events.
+        You can also donate in honor or memory of someone special.</li> 
+    </ol>
+    </div>
+
+    <div class="account">
+        <div>
+    <h4><b>Account Number :</b> 3350584635</h4>
+    <h4><b>Bank Name :</b> Lotus Bank</h4>
+    <h4><b>Account Name :</b> LifeAid Foundation</h4>
+   
+     
+    <p>Your generosity keeps someone’s heart beating, someone’s dream alive, and someone’s family hopeful.</p>
+
+    <p>Let’s build a world where no one fights alone.</p>
+            </div>
+            <div>
+     <img src="../images/ChatGPT Image Nov 6, 2025, 12_34_07 PM.png" alt="donate icon" width="250px">
+     </div>
+     </div>
+    
+</section>
+    </main>
+
+     <footer>
+        <div>
+        <div>
+        <img src="../images/LifeAid Healthcare Logo Design.png" alt="LifeAid Logo" width="100px">
+        </div>
+
+         <div style="margin-top: 20px;">
+            <img src="../images/facebook.png" alt="facebook icon" width="25px">
+            <img src="../images/twitter.png" alt="twitter icon" width="22px">
+            <img src="../images/instagram.png" alt="instagram icon" width="20px">
+            <img src="../images/youtube.png" alt="youtube icon" width="20px">
+        </div>
+        </div>
+
+        <div class="links" >
+            <a href="./index.html">Home</a>
+            <a href="../about/index.html">About Us</a>
+            <a href="../events/index.html">Events</a>
+            <a href="../helpdesk/index.html">Help Desk</a>
+            <a href="./index.html">Donate</a>
+        </div>
+
+        <div class="contact">
+            <ul id="ul1">
+                <li>Contacts</li>
+                <li>Tel: 09067561279</li>
+                <li>Email: info@lifeaid.org</li>
+                <li>Website: www.lifeaid.org </li>
+            </ul>
+        </div>
+
+    
+
+        <div class="subscribe">
+            <div>
+            <p id="news">Subscribe to our newsletter</p>
+        <form action="">
+            <input type="email" id="email" placeholder="Email">
+            <input type="submit">
+        </form>
+            </div>
+                <p>@Copyright 2025 </p>
+            <div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navlink = document.getElementById("navlink");
+        const toggle = document.getElementById("toggle");
+
+        const closeMenu = () => {
+            navlink.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+        };
+
+        toggle.addEventListener("click", () => {
+           const isOpen = navlink.classList.toggle("show");
+           toggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        navlink.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", closeMenu);
+        });
+    </script>
+</body>
+</html>

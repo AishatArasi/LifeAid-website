@@ -430,12 +430,6 @@ ul li {
         margin-bottom: 20px;
     }
 
-    #don {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 20px;
-    }
 
     .left, .right {
         padding: 0;
@@ -491,4 +485,26 @@ ul li {
         margin: 10px;}
 
 
+}
+
+@media screen and (max-width: 450px) {
+       #don {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .box1 {
+        gap: 40px;
+        width: 100%;
+    }
+
+    .medical {
+        width: 100%;
+        justify-self: center;
+        gap: 20px;
+    }
+
+   
 }

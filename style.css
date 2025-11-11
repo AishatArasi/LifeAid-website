@@ -430,11 +430,11 @@ ul li {
         margin-bottom: 20px;
     }
 
-    .don {
-        display: fles;
+    #don {
+        display: flex;
         flex-direction: column;
         width: 100%;
-        
+        gap: 20px;
     }
 
     .left, .right {
